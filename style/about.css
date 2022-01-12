@@ -1,0 +1,63 @@
+/* 色碼 */
+/* --myColorImp:#E56E7A;
+--myColorWhite:#fff;
+--myColorBlack:#212529;
+--myColorY:#F6BD60;
+--myColorM:#FFF3E1;
+--myColorP:#F5CAC3;
+--myColorB:#C3DAF4;
+--myColorG:#ccd5ae;
+--myColorPur:#CFAEE5; ------------------------------*/
+
+
+/* 所有圖片都寬100% */
+.pic img{
+    width: 100%;
+}
+
+/* -------------------- 段落標題 H2 -------------------- */
+.sectionTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2em;
+    width: 7em;
+    background-color: #fff;
+    border: 1px solid #212529;
+    box-shadow: 0.2em 0.2em 0 #C3DAF4;
+    margin: 5em auto 1.5em;
+    position: relative;
+}
+.sectionTitle img{
+    width: 80%;
+    position: absolute;
+    top: -3.5em;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    z-index: -1;
+}
+
+
+@media screen and (min-width:768px){
+    .sectionTitle{
+        font-size: 1.7em;
+        width: 7.5em;
+        border: 1px solid #212529;
+    }
+}
+@media screen and (min-width:992px){
+    /* H2圖片 */
+    .sectionTitle{
+        margin: 7em auto 1.5em;
+        font-size: 2em;
+        width: 8em;
+    }
+    .sectionTitle img{
+        width: 85%;
+        position: absolute;
+        top: -4.5em;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        z-index: -1;
+    }
+}

@@ -1,0 +1,402 @@
+/* 色碼 */
+/* --myColorImp:#E56E7A;
+--myColorWhite:#fff;
+--myColorBlack:#212529;
+--myColorY:#F6BD60;
+--myColorM:#FFF3E1;
+--myColorP:#F5CAC3;
+--myColorB:#C3DAF4;
+--myColorG:#ccd5ae;
+--myColorPur:#CFAEE5; ------------------------------*/
+
+
+/* 所有圖片都寬100% */
+.pic img{
+    width: 100%;
+}
+
+/* -------------------- 主BANNER -------------------- */
+.bannerLg{
+    display:none;
+}
+
+/* -------------------- 段落標題 H2 -------------------- */
+.sectionTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2em;
+    width: 7em;
+    background-color: #fff;
+    border: 1px solid #212529;
+    box-shadow: 0.2em 0.2em 0 #C3DAF4;
+    margin: 5em auto 1.5em;
+    position: relative;
+}
+.sectionTitle img{
+    width: 80%;
+    position: absolute;
+    top: -3.5em;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    z-index: -1;
+}
+/* -------------------- 盲盒玩法 -------------------- */
+.blindBoxLg{
+    display:none;
+}
+.blindBoxSm{
+    display: inline-block;
+}
+.blindBox .col-12{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1.3em;
+}
+.blindBox .col-md-3{
+    margin: auto;
+    padding: 0em 1em 0em 1em;
+}
+.blindBoxLg .col-md-3 + .col-md-3::before{
+    content: '';
+    display: block;
+    background: url(../img/index/blindBoxArrow.png) no-repeat center / 50%;
+    width: 15%;
+    height: 18%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    z-index: 1;
+}
+.blindBox .blindBoxLg{
+    position: relative;
+}
+.blindBox .blindBoxSm{
+    flex-direction:column;
+    position: relative;
+}
+.blindBoxSm .col-12+.col-12::before{
+    content: '';
+    display: block;
+    background: url(../img/index/blindBoxArrowV.png) no-repeat center / 100%;
+    width: 9%;
+    height: 9%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+}
+/* -------------------- 主題商品 -------------------- */
+.HPSliderTitle{
+    width: 100%;
+    font-size: 0.9em;
+    color: #21252950;
+    font-weight: 500;
+    border: 1px solid #212529;
+    border-radius: 10px 10px 0 0 ;
+    line-height: 2em;
+    text-align: center;
+    background-image: radial-gradient(0.6em circle at 1em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.5em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 2.5em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 4.1em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 4.1em 1em, #212529 50%, transparent 55%);
+}
+.HPSliderBody{
+    border: 1px solid #212529;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    position: relative;
+    top: -1px;
+}
+[class*=col-] {
+    padding: 0px;
+}
+.owl-theme .owl-nav{
+    margin: 0;
+}
+.owl-dots{
+    position: absolute;
+    bottom:3%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    bottom: 44%;
+    left: 0;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    bottom: 44%;
+    right: 0;
+}
+.owl-nav span{
+    font-size: 2em;
+    color: #E56E7A;
+    background-color: #ffffff;
+    border: 1px solid #212529;
+    display: block;
+    width: 1em;
+    height: 1em;
+    line-height: 0.7em;
+    border-radius: 50%;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #212529;
+    background-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #21252920;
+    margin: 0.5em;
+    width: 0.6em;
+    height: 0.6em;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #21252970;
+    width: 0.6em;
+    height: 0.6em;
+}
+/* -------------------- 熱門商品 -------------------- */
+.HotProductItem{
+    position: relative;
+}
+.HotProductInformation,.HotProductItemTitle{
+    box-shadow: 0.3em 0.3em 0 #C3DAF470;
+}
+.HotProductWrap{
+    padding-bottom: 5.6em;
+    background-image:
+        linear-gradient(#21252920 1px, transparent 0),
+        linear-gradient(90deg, #21252920 1px, transparent 0);
+    background-size: 2.55em 2.55em, 2.55em 2.55em;
+    outline: 1px solid #21252920;
+    border-radius: 1.5em;
+}
+.HotProductWrap a{
+    text-decoration: none;
+}
+.HotProductWrap .col-6{
+    padding: 0.5em;
+}
+.HotProductItemTitle{
+    background-color: #fff;
+    font-size: 0.9em;
+    color: #21252950;
+    font-weight: 500;
+    border: 1px solid #212529;
+    border-radius: 10px 10px 0 0 ;
+    line-height: 2em;
+    text-align: center;
+    background-image: radial-gradient(0.6em circle at 1em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.HotProductInformation{
+    color: #212529;
+    border: 1px solid #212529;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    top: -1px;
+    background: #FFF3E1 url(../img/index/HotProduct01.png) no-repeat center 40%/ 140%;
+    height: 12em;
+}
+.HotProductInformation h3{
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    padding: 0.5em;
+    left: 10%;
+    top: 58%;
+    background-color: #fff;
+}
+.HotProductInformation p{
+    font-weight: 700;
+    color: #E56E7A;
+    display: inline-block;
+    position: absolute;
+    padding: 0.5em 0.8em;
+    top: 77%;
+    background-color: #fff;
+    font-size: 0.8em;
+    left: 10%;
+}
+.row .HotProductItem:nth-child(2) .HotProductInformation{
+    background: #C3DAF4 url(../img/index/HotProduct02.png) no-repeat center 35%/ 170%;
+}
+.row .HotProductItem:nth-child(1) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #FFF3E1 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #FFF3E1 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #FFF3E1 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(3) .HotProductInformation{
+    background: #F5CAC3 url(../img/index/HotProduct03.png) no-repeat center 40%/ 90%;
+}
+.row .HotProductItem:nth-child(3n-3) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(4) .HotProductInformation{
+    background: #ccd5ae url(../img/index/HotProduct04.png) no-repeat center 60%/ 190%;
+}
+.row .HotProductItem:nth-child(4) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(5) .HotProductInformation{
+    background: #CFAEE5 url(../img/index/HotProduct05.png) no-repeat center 40%/ 140%;
+}
+.row .HotProductItem:nth-child(5) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(6) .HotProductInformation{
+    background: #F5CAC3 url(../img/index/HotProduct06.png) no-repeat center 40%/ 140%;
+}
+.row .HotProductItem:nth-child(6) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+/* -------------------- 推薦品牌 -------------------- */
+.artistWrap .row{
+    width: 75%;
+    margin: auto;
+}
+.artistItem{
+    box-sizing: border-box;
+    margin:0.5em;
+}
+.artistItem .pic{
+    border: 1px solid #21252980;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+.artistName{
+    text-align: center;
+    padding-top: 0.5em;
+}
+.artistWrap a{
+    text-decoration: none;
+    color: #212529;
+    font-size: 0.7em;
+}
+.owl-2 .owl-nav .owl-prev{
+    position: absolute;
+    bottom: 44%;
+    left: -3em;
+}
+.owl-2 .owl-nav .owl-next{
+    position: absolute;
+    bottom: 44%;
+    right: -3em;
+}
+.owl-2 .owl-dots{
+    position: absolute;
+    top:100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+/* md平板直up --------------------------------------------*/
+@media screen and (min-width:768px){
+    .sectionTitle{
+        font-size: 1.7em;
+        width: 7.5em;
+        border: 1px solid #212529;
+    }
+    .owl-nav span{
+        font-size: 2.5em;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span ,.owl-theme .owl-dots .owl-dot span {
+        margin: 1em;
+        width: 0.7em;
+        height: 0.7em;
+    }
+    /* 盲盒玩法 */
+    .blindBoxLg{
+        display:flex;
+    }
+    .blindBoxSm{
+        display: none;
+    }
+}
+/* lg平板橫up --------------------------------------------*/
+@media screen and (min-width:992px){
+    /* H2圖片 */
+    .sectionTitle{
+        margin: 7em auto 1.5em;
+    }
+    .sectionTitle img{
+        width: 85%;
+        position: absolute;
+        top: -4.5em;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        z-index: -1;
+    }
+    /* BANNER */
+    .bannerLg{
+        display:inherit;
+    }
+    .bannerSm{
+        display: none;
+    }
+    /* 主題商品 */
+    .sectionTitle{
+        font-size: 2em;
+        width: 8em;
+    }
+    .HPSliderTitle{
+        line-height: 2.2em;
+        font-size: 1em;
+        background-image: radial-gradient(0.8em circle at 1.5em 1.1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.95em circle at 1.5em 1.1em, #212529 50%, transparent 55%),radial-gradient(0.8em circle at 3.5em 1.1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.95em circle at 3.5em 1.1em, #212529 50%, transparent 55%),radial-gradient(0.8em circle at 5.6em 1.1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.95em circle at 5.6em 1.1em, #212529 50%, transparent 55%);
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span ,.owl-theme .owl-dots .owl-dot span{
+        width: 0.8em;
+        height: 0.8em;
+    }
+    .owl-nav .owl-prev{
+        left: 1.5%;
+    }
+    .owl-nav .owl-next{
+        right: 1.5%;
+    }
+    /* 熱門商品 */
+    .HotProductInformation,.HotProductItemTitle{
+        box-shadow: 0.5em 0.5em 0 #C3DAF480;
+    }
+    .HotProductWrap .col-6{
+        padding: 1em;
+    }
+    .HotProductItemTitle{
+        line-height: 2.1em;
+        font-size: 1em;
+    }
+    .HotProductInformation{
+        color: #212529;
+        border: 1px solid #212529;
+        border-radius: 0 0 10px 10px;
+        position: relative;
+        top: -1px;
+        background: #FFF3E1 url(../img/index/HotProduct01.png) no-repeat center 50%/ 140%;
+        height: 16em;
+    }
+    .HotProductInformation h3{
+        font-size: 1.2em;
+    }
+    .HotProductInformation p{
+        font-size: 1em;
+    }
+    /* 推薦品牌 */
+    .artistWrap a{
+        font-size: 1em;
+    }
+    .owl-2 .owl-nav .owl-prev{
+        left: -4em;
+    }
+    .owl-2 .owl-nav .owl-next{
+        right: -4em;
+    }
+    /* 返回最上按鈕 */
+    .backToTop {
+        width:6em;
+        height:6em;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        margin:10em auto 7em;
+    }
+}
+/* xl桌機up ----------------------------------------------*/
+@media screen and (min-width:1200px){
+
+}

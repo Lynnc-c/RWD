@@ -1,0 +1,245 @@
+html{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size:16px;
+}
+/* ------------------ 頁首 ------------------ */
+nav{
+    border-bottom: 1px solid #212529;
+}
+header .col-12 ul{
+    display: none;
+}
+header .col-12{
+    display: flex;
+    align-items: center;
+}
+header .col-12 img{
+    height: 2.5em;
+    padding: 0.5em;
+}
+header p{
+    padding-right: 5em;
+}
+
+/* -------------------- 回頂部按鈕 -------------------- */
+.backToTop {
+    margin: auto;
+    width: 4em;
+    height: 4em;
+    opacity: 1;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #212529;
+    margin:5em auto 7em;
+    animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+@keyframes float{
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    30% {
+        transform: translate(0, -2px);
+    }
+    70% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* ------------------ 頁尾 ------------------ */
+.footerLogo{
+    display: none;
+}
+footer{
+    width: 100%;
+    position: relative;
+    background-color: #f5cac350;
+    color: #212529;
+    padding: 70px 0 20px;
+    border-top-right-radius: 7em;
+    font-size: 0.7em;
+    line-height: 20px;
+    bottom: 0;
+}
+footer .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .col-4{
+    padding: 0 0 30px 0;
+    box-sizing: border-box;
+}
+footer .col-4 a{
+    text-decoration: none;
+    color: #E56E7A;
+}
+footer .col-4:nth-child(1) a{
+    color: #E56E7A;
+    text-decoration: none;
+}
+footer .col-4 a:hover{
+    color: #E56E7A70;
+}
+footer .col-4:nth-child(1) p{
+    color: #21252952;
+}
+footer .col-12{
+    margin-bottom: 1em;
+}
+footer .col-4 h4 ,footer .col-12 h4{
+    width: fit-content;
+    margin-bottom: 2em;
+    position: relative;
+    font-size: 1.2em;
+}
+.footerNav li{
+    line-height: 2.5em;
+}
+.emailID{
+    width: fit-content;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+}
+footer .col-4 li a{
+    color: #212529;
+}
+form{
+    width: 100%;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    color: #212529;
+    border:0;
+    outline: none;
+}
+form button{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #212529;
+}
+.socialIcon .fab{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2em;
+    font-size: 20px;
+    color: #E56E7A;
+    background-color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    margin: 1em 0.2em;
+}
+hr{
+    border: 0;
+    border-bottom: 1px solid #21252980;
+    margin: 20px auto;
+}
+.copyRight{
+    text-align: center;
+    color: #21252960;
+}
+.copyRight a{
+    color: #21252990;
+    text-decoration: none;
+}
+.copyRight a:hover{
+    color: #E56E7A;
+}
+/* 底線+動態-------------------------- */
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #E56E7A50;
+    border-radius: 3px;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100px;
+    }
+}
+/* 當前頁面-------------------------- */
+footer .col-4 li .thispage{
+    color: #E56E7A;
+}
+
+
+
+/* lg平板橫up */
+@media screen and (min-width:992px){
+    /* 頁首 */
+    header .col-12 ul{
+        display: flex;
+    }
+    header .col-12 img{
+        height: 3.5em;
+        padding: 1em;
+    }
+    /* 返回最上按鈕 */
+    .backToTop {
+        width:6em;
+        height:6em;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        margin:10em auto 7em;
+    }
+    
+    /* 頁尾 */
+    footer{
+        font-size: 0.9em;
+    }
+    footer .col-4 h4,footer .col-12 h4{
+        font-size: 1em;
+    }
+    .footerLogo{
+        display: block;
+    }
+    .footerNav li{
+        line-height: 2em;
+    }
+}

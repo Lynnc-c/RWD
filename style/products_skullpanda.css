@@ -1,0 +1,98 @@
+/* 色碼 */
+/* --myColorImp:#E56E7A;
+--myColorWhite:#fff;
+--myColorBlack:#212529;
+--myColorY:#F6BD60;
+--myColorM:#FFF3E1;
+--myColorP:#F5CAC3;
+--myColorB:#C3DAF4;
+--myColorG:#ccd5ae;
+--myColorPur:#CFAEE5; ------------------------------*/
+
+
+/* 所有圖片都寬100% */
+.pic img{
+    width: 100%;
+}
+
+/* 販賣機 */
+.vendingMachine{
+    padding: 1em;
+    width: 100%;
+    border: 1px solid red;
+}
+.vendingMachineBorder{
+    border: 1px solid #212529;
+    background-color: pink;
+    padding: 1em;
+}
+.vendingMachine .row{
+    background-color: #fece2f;
+    flex-direction:row;
+    border: 1px solid #212529;
+    padding: 1em;
+    border-radius: 0.2em;
+}
+.col-7,.col-5{
+    background-color: #fece2f;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #212529;
+}
+/* 販賣機右區 */
+.BigPicScreen{
+    height: 10em;
+    background-color: plum;
+    margin: 1em 0.5em;
+    border: 1px solid #212529;
+}
+
+/* 手機版-小圖展示區 */
+.showcaseSm{
+    box-sizing: border-box;
+    padding: 0em 1em;
+}
+.owl-carousel{
+    background-color: #aaa;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 1em;
+    border: 1px solid #212529;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    bottom:35%;
+    left: -7%;
+}
+.owl-nav .owl-next{
+    position: absolute;
+    bottom:35%;
+    right: -7%;
+}
+.owl-nav span{
+    font-size: 2em;
+    color: #E56E7A;
+    background-color: #ffffff;
+    border: 1px solid #212529;
+    display: block;
+    width: 1em;
+    height: 1em;
+    line-height: 0.7em;
+    border-radius: 50%;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    .col-7{
+        width: 58.333333%;
+    }
+    .col-5{
+        width: 41.666666%;
+    }
+}
+    @media screen and (min-width:992px){
+
+}
