@@ -9,9 +9,9 @@ function topFunction() {
         behavior: 'smooth',
     });
 };
-// 回頂部按鈕隱藏，到scrollTop>500才顯示
+// 回頂部按鈕隱藏，到scrollTop>300才顯示
 window.addEventListener("scroll",function(){
-    if(document.documentElement.scrollTop > 500){
+    if(document.documentElement.scrollTop > 300){
         document.getElementById("backToTop").classList.remove("backToTopNone");
     }else{
         document.getElementById("backToTop").classList.add("backToTopNone");

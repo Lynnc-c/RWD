@@ -22,7 +22,14 @@
     <!-- JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="js/products_skullpanda.js"></script>
+    
+
+    <style>
+        /* .shoppingCartWrap .tg{
+            display: block;
+            opacity: 1;
+        } */
+    </style>
 </head>
 <body>
 <!------- 頁首 ------->
@@ -37,7 +44,7 @@
         <!-- 選單 -->
         <nav class="main-nav">
             <a href="products_harrypotter.html">主題商品</a>
-            <a href="products.html">系列商品</a>
+            <a href="products.html" class="thispage">系列商品</a>
             <a href="artist.html">藝術家</a>
             <a href="about.html">關於我們</a>
             <a href="store.html">服務據點</a>
@@ -48,6 +55,7 @@
         </nav>
         <div class="hbNav">
             <ol>
+                <a href="index.html"><li>回到首頁</li></a>
                 <a href="products_harrypotter.html"><li>主題商品</li></a>
                 <a href="products.html"><li>系列商品</li></a>
                 <a href="artist.html"><li>藝術家</li></a>
@@ -67,7 +75,7 @@
         <div class="vendingMachineBorder">
             <div class="row">
                 <div class="col-7">
-                    <!-- 桌機版-左-展示區 -->
+                    <!-- 桌機版-左-小圖展示區 -->
                     <div class="showcase">
                         <div class="showcaseSpecial">
                             <p class="tabPrice">每盒均價<br><span>$ 380</span></p>
@@ -77,33 +85,33 @@
                         </div>
                         <div class="showcaseNormal">
                             <img src="img/products/01/01.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">復古男孩</p>
+                            <p class="productsName" style="left: 9%;">復古男孩</p>
                             <img src="img/products/01/02.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">滑板少年</p>
+                            <p class="productsName" style="left: 30%;">滑板少年</p>
                             <img src="img/products/01/03.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">紫酷酷</p>
+                            <p class="productsName" style="left: 52%;">紫酷酷</p>
                             <img src="img/products/01/04.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName" style="left: 72%;">悠閒下午茶</p>
+                            <p class="productsName" style="left: 69%;">悠閒下午茶</p>
                         </div>
                         <div class="showcaseNormal">
                             <img src="img/products/01/05.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">精緻主張</p>
+                            <p class="productsName" style="left: 9%;">精緻主張</p>
                             <img src="img/products/01/06.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">練習生</p>
+                            <p class="productsName" style="left: 31%;">練習生</p>
                             <img src="img/products/01/07.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">嘻哈哈</p>
+                            <p class="productsName" style="left: 52%;">嘻哈哈</p>
                             <img src="img/products/01/08.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">黃卷卷</p>
+                            <p class="productsName" style="left: 73%;">黃卷卷</p>
                         </div>
                         <div class="showcaseNormal">
                             <img src="img/products/01/09.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">牛奶小可愛</p>
+                            <p class="productsName" style="left: 7.5%;">牛奶小可愛</p>
                             <img src="img/products/01/10.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">混搭範本</p>
+                            <p class="productsName" style="left: 30%;">混搭範本</p>
                             <img src="img/products/01/11.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">粉色宣言</p>
+                            <p class="productsName" style="left: 50%;">粉色宣言</p>
                             <img src="img/products/01/12.png" alt="products picture" class="hvr-buzz-out">
-                            <p class="productsName">街舞教練</p>
+                            <p class="productsName" style="left: 71%;">街舞教練</p>
                         </div>
                     </div>
                 </div>
@@ -134,7 +142,7 @@
                     <div class="BtnWrap">
                         <a href="products.html"><button class="back"><i class="fas fa-box-open"></i><br>其他系列</button></a>
                         <button class="all"><i class="fas fa-boxes"></i><br>整組購買</button>
-                        <button class="shoppingCart"><i class="fas fa-shopping-cart"></i><br>加入購物車</button>
+                        <button class="shoppingCart" id="shoppingCart"><i class="fas fa-shopping-cart"></i><br>加入購物車</button>
                     </div>
                     <div class="shoppingCartWrap">
                         <table class="tg">
@@ -156,8 +164,8 @@
                                     <td class="tg-0lax" colspan="2" id="price" style="padding-top: 62px;">380</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-0lax"></td>
-                                    <td class="tg-0lax" colspan="3"><button id="clear">清除</button></td>
+                                    <td class="tg-0lax" colspan="1"><button id="del">刪除購物車</button></td>
+                                    <td class="tg-0lax" colspan="3"><button id="clear">歸零</button></td>
                                     <td class="tg-0lax" colspan="2"><button id="check">結帳</button></td>
                                 </tr>
                             </tbody>
@@ -202,7 +210,7 @@
                     <h4>關於我們<div class="underline"><span></span></div></h4>
                     <ul>
                         <li><a href="products_harrypotter.html">主題商品</a></li>
-                        <li><a href="products.html">系列商品</a></li>
+                        <li><a href="products.html" class="thispage">系列商品</a></li>
                         <li><a href="artist.html">藝術家</a></li>
                         <li><a href="about.html">關於我們</a></li>
                         <li><a href="store.html">服務據點</a></li>
@@ -263,7 +271,7 @@
                         nav:true
                     },
                     1000:{
-                        items:6,
+                        items:7,
                         nav:true,
                         loop:true
                     }
@@ -271,6 +279,9 @@
             })
         });
     </script>
+<!----- JS ----->    
+    <script src="js/products_skullpanda.js"></script>
+
 
 </body>
 </html>
