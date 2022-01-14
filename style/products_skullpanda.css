@@ -15,84 +15,369 @@
     width: 100%;
 }
 
-/* 販賣機 */
+/* 販賣機 -------------------------------------------*/
+/* 販賣機系列名稱 */
+.vendingMachineTitle{
+    width: 35%;
+    height: 3em;
+    border: 1px solid #212529;
+    background-color: #C3DAF4;
+    padding:0.5em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 1em 1em 0 0;
+    position: relative;
+    bottom: -1px;
+    left: 1em;
+    justify-content: center;
+    font-size: 0.8em;
+    z-index: -1;
+}
+.vendingMachineTitle img{
+    height: 100%;
+    width: auto;
+}
+.vendingMachineTitle p{
+    margin-right: 1em;
+    font-weight: 800;
+}
+/* 販賣機本體 */
 .vendingMachine{
     padding: 1em;
     width: 100%;
-    border: 1px solid red;
+    position: relative;
+    margin-bottom: 10em;
 }
 .vendingMachineBorder{
     border: 1px solid #212529;
-    background-color: pink;
-    padding: 1em;
+    background-color: #C3DAF4;
+    padding: 1.5em;
+    border-radius: 0.2em;
 }
 .vendingMachine .row{
-    background-color: #fece2f;
+    background-color: #C3DAF4;
     flex-direction:row;
     border: 1px solid #212529;
     padding: 1em;
     border-radius: 0.2em;
+    box-shadow: 0 0 10px #78a7db inset;
 }
 .col-7,.col-5{
-    background-color: #fece2f;
+    background-color: #C3DAF4;
     box-sizing: border-box;
-    width: 100%;
-    border: 1px solid #212529;
+    padding: 0;
 }
-/* 販賣機右區 */
-.BigPicScreen{
-    height: 10em;
-    background-color: plum;
-    margin: 1em 0.5em;
-    border: 1px solid #212529;
-}
-
-/* 手機版-小圖展示區 */
-.showcaseSm{
-    box-sizing: border-box;
-    padding: 0em 1em;
-}
-.owl-carousel{
-    background-color: #aaa;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 1em;
-    border: 1px solid #212529;
-}
-.owl-nav .owl-prev{
-    position: absolute;
-    bottom:35%;
-    left: -7%;
-}
-.owl-nav .owl-next{
-    position: absolute;
-    bottom:35%;
-    right: -7%;
-}
-.owl-nav span{
-    font-size: 2em;
-    color: #E56E7A;
-    background-color: #ffffff;
-    border: 1px solid #212529;
+/* 販賣機左腳+右腳 */
+.vendingMachineBorder::before{
+    content: '';
     display: block;
-    width: 1em;
-    height: 1em;
-    line-height: 0.7em;
-    border-radius: 50%;
+    width: 6em;
+    height: 5em;
+    background-color: #212529;
+    border: 1px solid #212529;
+    position: absolute;
+    top: 90%;
+    left: 3em;
+    border-radius: 0.5em;
+    z-index: -1;
+}
+.vendingMachineBorder::after{
+    content: '';
+    display: block;
+    width: 6em;
+    height: 5em;
+    background-color: #212529;
+    border: 1px solid #212529;
+    position: absolute;
+    top: 90%;
+    right: 3em;
+    border-radius: 0.5em;
+    z-index: -1;
+}
+/* 販賣機右區-大圖 */
+.BigPicScreen{
+    height: 12em;
+    background-color: plum;
+    border: 1px solid #212529;
+    border-radius: 0.8em;
+}
+.BigPicScreen img{
+    box-sizing: border-box;
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+/* 販賣機右區-按鈕 */
+.BtnWrap{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.6em;
+    padding: 1em;
+}
+.BtnWrap i{
+    font-size:1.2em;
+}
+.back{
+    cursor: pointer;
+    margin-top: 0.5em;
+    height: 5em;
+    width: 5em;
+    background-color: #CFAEE5;
+    color: #fff;
+    border: none;
+    border-radius: 300px;
+    box-shadow: 3px 3px 0px #ffffff50 inset,
+                0px 3px 0px #a467cc,
+                0px 6px 0px #a467cc,
+                0px 7px 0px #212529,
+                0px 9px 1px #21252970;
+    position: relative;
+    top:-6px;
+    transition: .2s;
+    border: 1px solid #212529;
+}
+.back:hover{
+    top:0px;
+    box-shadow: 3px 3px 0px #ffffff50  inset,
+                0px 0px 0px #a467cc,
+                0px 0px 0px #a467cc,
+                0px 3px 1px #21252970;
+}
+.all{
+    cursor: pointer;
+    margin-top: 0.5em;
+    height: 5em;
+    width: 5em;
+    background-color: #F6BD60;
+    color: #fff;
+    border: none;
+    border-radius: 300px;
+    box-shadow: 3px 3px 0px #ffffff50 inset,
+                0px 3px 0px #d39022,
+                0px 6px 0px #d39022,
+                0px 7px 0px #212529,
+                0px 9px 1px #21252970;
+    position: relative;
+    top:-6px;
+    transition: .2s;
+    border: 1px solid #212529;
+}
+.all:hover{
+    top:0px;
+    box-shadow: 3px 3px 0px #ffffff50  inset,
+                0px 0px 0px #d39022,
+                0px 0px 0px #d39022,
+                0px 3px 1px #21252970;
+}
+.shoppingCart{
+    cursor: pointer;
+    height: 5em;
+    width: 9em;
+    margin-top: 10px;
+    background-color: #E56E7A;
+    color: #fff;
+    border: none;
+    border-radius: 300px;
+    box-shadow: 3px 3px 0px #ffffff50 inset,
+                0px 3px 0px #c13644,
+                0px 6px 0px #c13644,
+                0px 7px 0px #212529,
+                0px 9px 1px #21252970;
+    position: relative;
+    top:-6px;
+    transition: .2s;
+    border: 1px solid #212529;
+}
+.shoppingCart:hover{
+    top:0px;
+    box-shadow: 3px 3px 0px #ffffff50 inset,
+                0px 0px 0px #c13644,
+                0px 0px 0px #c13644,
+                0px 3px 1px #21252970;
+}
+/* 結帳區 */
+.shoppingCartWrap{
+    height: 320px;
+}
+table{
+    display: none;
+    width: 355.3px;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+.showup{
+    display: inline-block;
+    animation: wrapper-gradient .5s linear  ;
 }
 
+@keyframes wrapper-gradient {
+    0% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+overflow:hidden;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-size:14px;
+font-weight:normal;overflow:hidden;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:center;vertical-align:top}
 
+.shoppingCartWrap th{
+    height: 50px;
+    font-size: 14px;
+    width: 118.3333px;
+    line-height: 4em;
+    text-align:center;
+    font-weight: 600;
+}
+td{
+    line-height: 1.5em;
+    height: 60.3px;
+    padding-top: 10.3px;
+    box-sizing: border-box;
+}
+#cut{
+    border-radius: 555px;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    line-height: 1em;
+    background-color: #fff;
+}
+#add{
+    border-radius: 555px;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    line-height: 1.9em;
+    background-color: #fff;
+}
+#num{
+    width: 50px;
+    line-height: 2em;
+}
+#clear{
+    border-radius: 555px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #000;
+    background-color: #31abc6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+#check{
+    border-radius: 555px;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #000;
+    background-color: #ff006e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
 
-
-@media screen and (min-width:768px){
-    .col-7{
-        width: 58.333333%;
+/* lg平板橫up */
+@media screen and (max-width:991px){
+    .showcaseSm{
+        box-sizing: border-box;
+        margin: 0 0.5em;
+        position: relative;
+    }
+    /* 裝飾架 */
+    .showcaseSm::after{
+        content: '';
+        display: block;
+        background-color: #aaa;
+        border: 1px solid #212529;
+        height: 1.5em;
+        z-index: 1;
+        position: absolute;
+        width: 99.5%;
+        bottom: -0.5em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .showcaseSm::before{
+        content: '';
+        display: block;
+        background: 
+        radial-gradient(10px circle at 10% 0.7em, #555 50%, transparent 60%),
+        radial-gradient(12px circle at 10% 0.7em, #000 50%, transparent 55%),
+        radial-gradient(10px circle at 25% 0.7em, #555 50%, transparent 60%),
+        radial-gradient(12px circle at 25% 0.7em, #000 50%, transparent 55%),
+        radial-gradient(10px circle at 40% 0.7em, #555 50%, transparent 60%),
+        radial-gradient(12px circle at 40% 0.7em, #000 50%, transparent 55%),
+        radial-gradient(10px circle at 55% 0.7em, #555 50%, transparent 60%),
+        radial-gradient(12px circle at 55% 0.7em, #000 50%, transparent 55%),
+        radial-gradient(10px circle at 70% 0.7em, #555 50%, transparent 60%),
+        radial-gradient(12px circle at 70% 0.7em, #000 50%, transparent 55%),
+        radial-gradient(10px circle at 85% 0.7em, #555 50%, transparent 60%),
+        radial-gradient(12px circle at 85% 0.7em, #000 50%, transparent 55%);
+        width: 100%;
+        height: 1.5em;
+        position: absolute;
+        z-index: 2;
+        bottom:0.3em;
+    }
+    .showcaseSm .owl-carousel img{
+        height: 100%;
+        padding: 0.5em 0 1em 0;
+    }
+    .owl-carousel{
+        background-color: #aaa;
+        box-sizing: border-box;
+        position: relative;
+        border: 1px solid #212529;
+        border-radius: 0.5em;
+        overflow: hidden;
+        margin-top: 1em;
+    }
+    .owl-nav .owl-prev{
+        position: absolute;
+        bottom:35%;
+        left: 0;
+    }
+    .owl-nav .owl-next{
+        position: absolute;
+        bottom:35%;
+        right: 0;
+    }
+    .owl-nav span{
+        font-size: 2em;
+        color: #E56E7A;
+        background-color: #ffffff;
+        border: 1px solid #212529;
+        display: block;
+        width: 1em;
+        height: 1em;
+        line-height: 0.7em;
+        border-radius: 50%;
     }
     .col-5{
-        width: 41.666666%;
+        width: 100%;
+    }
+    .col-7{
+        display: none;
     }
 }
-    @media screen and (min-width:992px){
 
+/* lg平板橫up */
+@media screen and (min-width:992px){
+    /* 販賣機右區-大圖 */
+    .BigPicScreen{
+        height: 18em;
+    }
+    /* 手機版-小圖展示區在桌機版時隱藏 */
+    .showcaseSm{
+        display: none;
+    }
 }

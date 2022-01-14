@@ -38,6 +38,10 @@ html{
     padding-left: 3em;
     font-weight: 600;
 }
+.main-nav a:hover{
+    color: #E56E7A;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+}
 .main-nav img{
     width: auto;
     height: 1.3em;
@@ -76,6 +80,10 @@ html{
 .hbNav li:hover{
     border: 2px solid #E56E7A;
     box-shadow: 2px 2px 0 #F6BD60;
+}
+.main-nav .thispage{
+    color: #E56E7A;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
 }
 /*手機專用*/
 @media screen and (max-width: 991px){

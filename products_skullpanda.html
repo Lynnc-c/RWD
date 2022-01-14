@@ -21,37 +21,78 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/products_skullpanda.js"></script>
 </head>
 <body>
 <!------- 頁首 ------->
+    <input type="checkbox" id="menu-check">
+    <header class="main-header">
+        <!-- main logo -->
+        <a href="index.html" class="logo">
+            <h1><img src="img/all/logo.png" alt="atoys logo"></h1>
+        </a>
+        <!-- 漢堡 -->
+        <label for="menu-check" class="hb"></label>
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="products_harrypotter.html">主題商品</a>
+            <a href="products.html">系列商品</a>
+            <a href="artist.html">藝術家</a>
+            <a href="about.html">關於我們</a>
+            <a href="store.html">服務據點</a>
+            <a href="news.html">最新消息</a>
+            <a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-search"></i></i></a>
+        </nav>
+        <div class="hbNav">
+            <ol>
+                <a href="products_harrypotter.html"><li>主題商品</li></a>
+                <a href="products.html"><li>系列商品</li></a>
+                <a href="artist.html"><li>藝術家</li></a>
+                <a href="about.html"><li>關於我們</li></a>
+                <a href="store.html"><li>服務據點</li></a>
+                <a href="news.html"><li>最新消息</li></a>
+            </ol>
+        </div>
+    </header>
 
-<!------- 關於我們 ------->
+<!------- 販賣機 ------->
     <div class="container vendingMachine">
+        <div class="vendingMachineTitle">
+            <p>POP MART</p>
+            <img src="img/products/01/logo.jpg" alt="POP MART">
+        </div>
         <div class="vendingMachineBorder">
             <div class="row">
                 <div class="col-7">
-                    <!-- 桌機版-小圖展示區 -->
-                    <div class="showcase"></div>
+                    <!-- 桌機版-左-小圖展示區 -->
+                    <div class="showcase">
+
+                    </div>
                 </div>
                 <div class="col-5">
                     <!-- 大圖區 -->
-                    <div class="BigPicScreen"></div>
+                    <div class="BigPicScreen pic">
+                        <img src="img/products/01/00.png" alt="special products" id="large" class="animate__animated">
+                    </div>
                     <!-- 手機版-小圖展示區 -->
                     <div class="showcaseSm">
                         <div class="owl-carousel owl-theme">
-                            <img src="img/products/01/00.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/01.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/02.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/03.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/04.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/05.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/06.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/07.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/08.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/09.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/10.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/11.png" alt="SkullPanda Art Toys">
-                            <img src="img/products/01/12.png" alt="SkullPanda Art Toys">
+                            <img src="img/products/01/00.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/01.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/02.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/03.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/04.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/05.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/06.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/07.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/08.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/09.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/10.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/11.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
+                            <img src="img/products/01/12.png" alt="SkullPanda Art Toys"  class="hvr-buzz-out">
                         </div>
                     </div>
                     <!-- 販賣機按鈕 -->
@@ -60,13 +101,40 @@
                         <button class="all"><i class="fas fa-boxes"></i><br>整組購買</button>
                         <button class="shoppingCart"><i class="fas fa-shopping-cart"></i><br>加入購物車</button>
                     </div>
+                    <div class="shoppingCartWrap">
+                        <table class="tg">
+                            <thead>
+                                <tr>
+                                    <th class="tg-0pky">品項</th>
+                                    <th class="tg-0lax" colspan="3">數量</th>
+                                    <th class="tg-0lax" colspan="2">價格(NT)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tg-0lax" style="font-size: 14px;height: 150.3px;padding-top: 50px;">SKULLPANDA<br>熊貓熱潮系列盲盒</td>
+                                    <td class="tg-0lax" style="padding-top: 60px;">
+                                        <button id="cut">-</button></td>
+                                    <td class="tg-0lax" id="num" style="padding-top: 60px;width: 50.3px;">1</td>
+                                    <td class="tg-0lax" style="padding-top: 60px;">
+                                        <button id="add">+</button></td>
+                                    <td class="tg-0lax" colspan="2" id="price" style="padding-top: 62px;">380</td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-0lax"></td>
+                                    <td class="tg-0lax" colspan="3"><button id="clear">清除</button></td>
+                                    <td class="tg-0lax" colspan="2"><button id="check">結帳</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 <!------- 回頂部按鈕 ------->
-    <div class="backToTop">
+    <div class="backToTop backToTopNone" id="backToTop">
         <a onclick="topFunction()" id="BackToTopBtn" class="pic">
             <i class="fas fa-chevron-up"></i>
             <img src="img/all/backToTop.png" alt="cat">
@@ -88,8 +156,8 @@
                     <div class="socialIcon">
                         <i class="fab fa-facebook-square"></i>
                         <i class="fab fa-instagram"></i>
-                        <i class="fab fa-youtube-square"></i>
-                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
                     </div>
                 </div>
                 <div class="col-lg-3 footerLogo">
@@ -99,7 +167,7 @@
                     <h4>關於我們<div class="underline"><span></span></div></h4>
                     <ul>
                         <li><a href="products_harrypotter.html">主題商品</a></li>
-                        <li><a href="products.html" class="thispage">系列商品</a></li>
+                        <li><a href="products.html">系列商品</a></li>
                         <li><a href="artist.html">藝術家</a></li>
                         <li><a href="about.html">關於我們</a></li>
                         <li><a href="store.html">服務據點</a></li>
@@ -136,7 +204,6 @@
         </div>
     </footer>
 
-
 <!----- 回頂部按鈕JS ----->
     <script src="js/all.js"></script>
 
@@ -149,19 +216,19 @@
                 dots:false,
                 center:true,
                 loop:true,
-                margin:5,
+                margin:35,
                 responsiveClass:true,
                 responsive:{
                     0:{
-                        items:3,
+                        items:4,
                         nav:true
                     },
                     600:{
-                        items:3,
+                        items:6,
                         nav:true
                     },
                     1000:{
-                        items:3,
+                        items:6,
                         nav:true,
                         loop:true
                     }
