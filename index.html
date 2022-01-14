@@ -24,24 +24,40 @@
 </head>
 <body>
 <!------- 頁首 ------->
-    <header>
-        <nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="logo">
-                            <img src="img/all/logo.png" alt="atoys">
-                        </div>
-                        <ul>
-                            <li>123</li>
-                            <li>123</li>
-                            <li>123</li>
-                            <li>123</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <input type="checkbox" id="menu-check">
+
+    <header class="main-header">
+        <!-- main logo -->
+        <a href="#" class="logo">
+            <h1><img src="img/all/logo.png" alt="atoys logo"></h1>
+        </a>
+        <!-- 漢堡 -->
+        <label for="menu-check" class="hb"></label>
+        <!-- 選單 -->
+        <nav class="main-nav">
+            <a href="products_harrypotter.html">主題商品</a>
+            <a href="products.html">系列商品</a>
+            <a href="artist.html">藝術家</a>
+            <a href="about.html">關於我們</a>
+            <a href="store.html">服務據點</a>
+            <a href="news.html">最新消息</a>
+            <a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-search"></i></i></a>
         </nav>
+        <div class="hbNav">
+            <ol>
+                <a href="products_harrypotter.html"><li>主題商品</li></a>
+                <a href="products.html"><li>系列商品</li></a>
+                <a href="artist.html"><li>藝術家</li></a>
+                <a href="about.html"><li>關於我們</li></a>
+                <a href="store.html"><li>服務據點</li></a>
+                <a href="news.html"><li>最新消息</li></a>
+            </ol>
+        </div>
+    </header>
+
+    <div class="mainBanner">
         <!-- 主BANNER手機版 -->
         <div class="bannerSm pic">
             <img src="img/index/bannerS.gif" alt="atoys banner">
@@ -50,7 +66,7 @@
         <div class="bannerLg pic">
             <img src="img/index/banner.gif" alt="atoys banner">
         </div>
-    </header>
+    </div>
 
 <!------- 盲盒玩法 ------->
     <section class="blindBox container ">
@@ -288,7 +304,7 @@
     </section>
 
 <!------- 回頂部按鈕 ------->
-    <div class="backToTop">
+    <div class="backToTop backToTopNone" id="backToTop">
         <a onclick="topFunction()" id="BackToTopBtn" class="pic">
             <i class="fas fa-chevron-up"></i>
             <img src="img/all/backToTop.png" alt="cat">
@@ -310,8 +326,8 @@
                     <div class="socialIcon">
                         <i class="fab fa-facebook-square"></i>
                         <i class="fab fa-instagram"></i>
-                        <i class="fab fa-youtube-square"></i>
-                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
                     </div>
                 </div>
                 <div class="col-lg-3 footerLogo">

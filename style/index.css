@@ -378,6 +378,9 @@
         font-size: 1em;
     }
     /* 推薦品牌 */
+    .artistWrap{
+        margin-bottom: 10em;
+    }
     .artistWrap a{
         font-size: 1em;
     }
@@ -386,14 +389,6 @@
     }
     .owl-2 .owl-nav .owl-next{
         right: -4em;
-    }
-    /* 返回最上按鈕 */
-    .backToTop {
-        width:6em;
-        height:6em;
-        font-size: 0.8em;
-        line-height: 1.2em;
-        margin:10em auto 7em;
     }
 }
 /* xl桌機up ----------------------------------------------*/

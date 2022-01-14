@@ -1,57 +1,233 @@
+/* 色碼 */
+/* --myColorImp:#E56E7A;
+--myColorWhite:#fff;
+--myColorBlack:#212529;
+--myColorY:#F6BD60;
+--myColorM:#FFF3E1;
+--myColorP:#F5CAC3;
+--myColorB:#C3DAF4;
+--myColorG:#ccd5ae;
+--myColorPur:#CFAEE5; ------------------------------*/
+
 html{
     font-family: 'Noto Sans TC', sans-serif;
     font-size:16px;
 }
-/* ------------------ 頁首 ------------------ */
-nav{
+/* ------------------ 導覽列 ------------------ */
+.main-header{
+    background-color: #fff;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
     border-bottom: 1px solid #212529;
+    height: 50px;
 }
-header .col-12 ul{
+.logo img{
+    padding-left: 10px;
+    height: 45px;
+    width: auto;
+}
+#menu-check{
     display: none;
 }
-header .col-12{
+.main-nav a{
+    color: #212529;
+    text-decoration: none;
+    padding-left: 3em;
+    font-weight: 600;
+}
+.main-nav img{
+    width: auto;
+    height: 1.3em;
+}
+.hbNav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 111;
     display: flex;
+    text-align: center;
     align-items: center;
+    justify-content: center;
+    /* background: color image attachment repeat position / size */
+    background:#fff url(../img/all/cat00.png) scroll no-repeat 100% 95% / 12em auto;
+    opacity: 0;
 }
-header .col-12 img{
-    height: 2.5em;
-    padding: 0.5em;
+.hbNav a{
+    text-decoration: none;
+    color: #212529;
+    line-height: 3em;
+    font-weight: 500;
 }
-header p{
-    padding-right: 5em;
+.hbNav li{
+    border: 2px solid #212529;
+    border-radius: 555em;
+    padding:0 3em;
+    margin: 1em 0;
+    cursor: pointer;
+}
+.hbNav a:hover{
+    color: #E56E7A;
+}
+.hbNav li:hover{
+    border: 2px solid #E56E7A;
+    box-shadow: 2px 2px 0 #F6BD60;
+}
+/*手機專用*/
+@media screen and (max-width: 991px){
+    .main-header{
+        height: 40px;
+        padding: 5px 0px;
+    }
+    .logo img{
+        height: 40px;
+        width: auto;
+    }
+    .hb{
+        width: 50px;
+        height: 50px;
+        background-color: #212529;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 999;
+    }
+    .hb:before,
+    .hb:after{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background-color: #fff;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform: rotate(0deg);
+    }
+    .hb:before{
+        top: 15px;
+        box-shadow: 0px 8.5px 0px #fff;
+        transition: box-shadow .3s .6s,
+                    top        .3s .3s,
+                    transform  .3s 0s;
+    }
+    .hb:after{
+        bottom: 15px;
+        transition: bottom     .3s .3s,
+                    transform  .3s 0s;
+    }
+    #menu-check:checked ~ .main-header .hb:before{
+        top: 23px;
+        box-shadow: 0px 8.5px 0px #ff00;
+        transform: rotate(45deg);
+        transition: box-shadow .3s 0s,
+                    top        .3s .3s,
+                    transform  .3s .6s;
+    }
+    #menu-check:checked ~ .main-header .hb:after{
+        bottom: 24px;
+        transform: rotate(-45deg);
+        transition: bottom     .3s .3s,
+                    transform  .3s .6s;
+    }
+    .main-nav{
+        display: none;
+    }
+    #menu-check:checked ~ .main-header .hbNav{
+        right: 0;
+        opacity: 1;
+        transition: right .3s .3s,
+                    opacity .5s .6s;
+    }
+}
+/*平版-橫向*/
+@media screen and (min-width: 992px){
+    .hb{
+        display: none;
+    }
+    .main-nav a{
+        display: inline-block;
+    }
+    .hbNav{
+        display: none;
+    }
 }
 
 /* -------------------- 回頂部按鈕 -------------------- */
-.backToTop {
-    margin: auto;
-    width: 4em;
-    height: 4em;
-    opacity: 1;
-    font-size: 0.8em;
-    text-align: center;
-    line-height: 1.2em;
-    font-weight: 600;
-    color: #212529;
-    margin:5em auto 7em;
-    animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+/*手機專用*/
+@media screen and (max-width: 991px){
+    .backToTop {
+        margin: auto;
+        width: 4em;
+        height: 4em;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.2em;
+        font-weight: 600;
+        color: #212529;
+        margin:5em auto 7em;
+        animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+    }
+    /* 漂浮影格 */
+    @keyframes float{
+        0% {
+            transform: translate(0, 0);
+        }
+        
+        30% {
+            transform: translate(0, -2px);
+        }
+        70% {
+            transform: translate(0, 5px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
 }
-
-@keyframes float{
-    0% {
-        transform: translate(0, 0);
+/*平版-橫向*/
+@media screen and (min-width: 992px){
+    .backToTop{
+        position: fixed;
+        width:4.5em;
+        height:4.5em;
+        right: 5em;
+        bottom: 2em;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.2em;
+        font-weight: 600;
+        color: #212529;
+        margin:10em auto 7em;
+        animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity .5s 0s;
     }
-    
-    30% {
-        transform: translate(0, -2px);
+    .backToTopNone{
+        opacity: 0;
+        transition: opacity .5s 0s;
     }
-    70% {
-        transform: translate(0, 5px);
-    }
-    100% {
-        transform: translate(0, 0);
+    @keyframes float{
+        0% {
+            transform: translate(0, 0);
+        }
+        
+        30% {
+            transform: translate(0, -2px);
+        }
+        70% {
+            transform: translate(0, 5px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
     }
 }
-
 /* ------------------ 頁尾 ------------------ */
 .footerLogo{
     display: none;
@@ -174,7 +350,7 @@ hr{
 .copyRight a:hover{
     color: #E56E7A;
 }
-/* 底線+動態-------------------------- */
+/* 底線+動態 */
 .underline{
     width: 100%;
     height: 5px;
@@ -203,32 +379,14 @@ hr{
         left: 100px;
     }
 }
-/* 當前頁面-------------------------- */
+/* -----------當前頁面----------- */
 footer .col-4 li .thispage{
     color: #E56E7A;
 }
 
 
-
 /* lg平板橫up */
 @media screen and (min-width:992px){
-    /* 頁首 */
-    header .col-12 ul{
-        display: flex;
-    }
-    header .col-12 img{
-        height: 3.5em;
-        padding: 1em;
-    }
-    /* 返回最上按鈕 */
-    .backToTop {
-        width:6em;
-        height:6em;
-        font-size: 0.8em;
-        line-height: 1.2em;
-        margin:10em auto 7em;
-    }
-    
     /* 頁尾 */
     footer{
         font-size: 0.9em;
