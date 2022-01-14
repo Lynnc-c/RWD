@@ -21,7 +21,7 @@
     width: 35%;
     height: 3em;
     border: 1px solid #212529;
-    background-color: #C3DAF4;
+    background-color:#f8b74f;
     padding:0.5em 1em;
     display: flex;
     flex-wrap: wrap;
@@ -51,21 +51,22 @@
 }
 .vendingMachineBorder{
     border: 1px solid #212529;
-    background-color: #C3DAF4;
+    background: linear-gradient(#f8b74f 50%, #9a031e 50%);
+    background-size:100% 150px;
     padding: 1.5em;
     border-radius: 0.2em;
     box-shadow: 0 0.3em 3px #21252930;
 }
 .vendingMachine .row{
-    background-color: #C3DAF4;
+    background-color: #9a031e;
     flex-direction:row;
     border: 1px solid #212529;
     padding: 1em;
     border-radius: 0.2em;
-    box-shadow: 0 0 10px #78a7db inset;
+    box-shadow: 0 0 10px #21252980 inset;
 }
 .col-7,.col-5{
-    background-color: #C3DAF4;
+    background-color: #9a031e;
     box-sizing: border-box;
     padding: 0;
 }
@@ -101,7 +102,7 @@
 /* 販賣機右區-大圖 */
 .BigPicScreen{
     height: 12em;
-    background-color: #F6BD60;
+    background-color: #C3DAF4;
     border: 1px solid #212529;
     border-radius: 0.8em;
     overflow: hidden;
@@ -413,10 +414,10 @@ td{
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.4) inset;
     }
     .productsName{
-        background-color: #C3DAF4;
+        background-color: #f8b74f;
         color: #212529;
         z-index: 2;
-        padding: 5px 15px 5px 15px;
+        padding: 5px 5px 5px 5px;
         border-radius: 555px;
         border: 2px solid rgba(0, 0, 0, 0.4);
         position: absolute;
@@ -426,8 +427,9 @@ td{
         letter-spacing: 0.1em;
     }
     .showcaseSpecial p:nth-of-type(3){
-        background-color: #E56E7A;
-        left: 71%;
+        background-color: #9a031e;
+        color: #fff;
+        left: 68%;
     }
     .showcaseSpecial .tabPrice{
         background-color: #fff;
@@ -446,7 +448,7 @@ td{
         font-weight: 900;
     }
     .showcaseSpecial .tab{
-        background-color: #E56E7A;
+        background-color: #9a031e;
         color: #fff;
         opacity: 60%;
         padding: 20px;
