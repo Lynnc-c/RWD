@@ -342,6 +342,9 @@ form button .fas{
     cursor: pointer;
     margin: 1em 0.2em;
 }
+.socialIcon .fab:hover{
+    color: #C3DAF4;
+}
 hr{
     border: 0;
     border-bottom: 1px solid #21252980;

@@ -1,0 +1,192 @@
+/* 色碼 */
+/* --myColorImp:#E56E7A;
+--myColorWhite:#fff;
+--myColorBlack:#212529;
+--myColorY:#F6BD60;
+--myColorM:#FFF3E1;
+--myColorP:#F5CAC3;
+--myColorB:#C3DAF4;
+--myColorG:#ccd5ae;
+--myColorPur:#CFAEE5; ------------------------------*/
+
+
+/* 所有圖片都寬100% */
+.pic img{
+    width: 100%;
+}
+
+/* -------------------- 段落標題 H2 -------------------- */
+.sectionTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2em;
+    width: 7em;
+    background-color: #fff;
+    border: 1px solid #212529;
+    box-shadow: 0.2em 0.2em 0 #C3DAF4;
+    margin: 5em auto 1.5em;
+    position: relative;
+}
+.sectionTitle img{
+    width: 70%;
+    position: absolute;
+    top: -2.5em;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    z-index: -1;
+}
+/* 系列切換--------------------------------------- */
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:20em;
+    border-radius: 2em;
+    flex:0.5;
+    position:relative;
+    transition: flex 0.5s ease-in;
+    color:#fff;
+    cursor:pointer;
+    margin:2.5px;
+    border: 1px solid #212529;
+    box-shadow: 0.1em 0.2em 0 #C3DAF4;
+    overflow: hidden;
+}
+.panel a{
+    position:absolute;
+    bottom: 2em;
+    left: 1em;
+    opacity: 0;
+    text-decoration: none;
+    color: #fff;
+}
+.panel h3::before{
+    content: '';
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid #212529;
+    background: #fff url(../img/products/all/lightning.png.gif) no-repeat 100% 100% /100% 100%;
+    border-radius: 555em;
+    margin:0 0.5em 0 0;
+    position: relative;
+    bottom: -0.75em;
+}
+.panel:nth-child(2) h3::before{
+    background: #fff url(../img/products/all/music.gif) no-repeat 100% 100% /100% 100%;
+}
+.panel:nth-child(3) h3::before{
+    background: #fff url(../img/products/all/police-handcuffs.gif) no-repeat 100% 100% /100% 100%;
+}
+.panel:nth-child(4) h3::before{
+    background: #fff url(../img/products/all/sheep.gif) no-repeat 100% 100% /100% 100%;
+}
+.panel:nth-child(5) h3::before{
+    background: #fff url(../img/products/all/happy.gif) no-repeat 100% 100% /100% 100%;
+}
+.panel h3{
+    position: relative;
+    text-shadow: -1px 0 black, 0 1px black,1px 0 black, 0 -1px black;
+}
+.panel h3:hover{
+    color: #E56E7A;
+}
+.panel p{
+    padding-left: 4em;
+    font-size: 0.8em;
+}
+.panel span{
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    border-radius: 555em;
+    font-size: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.7em;
+    text-align: center;
+    color: #F6BD60;
+}
+.panel.active{
+    flex:5;
+}
+.panel.active a{
+    opacity:1;
+    transition: opacity .3s .5s;
+}
+@media(max-width:480px){
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display:none;
+    }
+}
+
+/* 熱門商品--------------------------------------- */
+.HotProductWrap{
+    margin-bottom: 5em;
+}
+.row .HotProductItem:nth-child(7) .HotProductInformation{
+    background: #C3DAF4 url(../img/products/all/HotProduct01.png) no-repeat center 35%/ 130%;
+}
+.row .HotProductItem:nth-child(7) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #C3DAF4 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(8) .HotProductInformation{
+    background: #ccd5ae url(../img/products/all/HotProduct03.png) no-repeat center 35%/ 150%;
+}
+.row .HotProductItem:nth-child(4n+4) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(9) .HotProductInformation{
+    background: #FFF3E1 url(../img/products/all/HotProduct04.png) no-repeat center 45%/ 170%;
+}
+.row .HotProductItem:nth-child(9) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #FFF3E1 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #FFF3E1 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #FFF3E1 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(10) .HotProductInformation{
+    background: #F5CAC3 url(../img/products/all/HotProduct05.png) no-repeat center 45%/ 150%;
+}
+.row .HotProductItem:nth-child(10) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #F5CAC3 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(11) .HotProductInformation{
+    background: #CFAEE5 url(../img/products/all/HotProduct06.png) no-repeat center 45%/ 140%;
+}
+.row .HotProductItem:nth-child(11) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+.row .HotProductItem:nth-child(12) .HotProductInformation{
+    background: #ccd5ae url(../img/products/all/HotProduct07.png) no-repeat center 55%/ 150%;
+}
+.row .HotProductItem:nth-child(12) .HotProductItemTitle{
+    background-image: radial-gradient(0.6em circle at 1em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #ccd5ae 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+}
+@media screen and (min-width:768px){
+    .sectionTitle{
+        font-size: 1.7em;
+        width: 7.5em;
+        border: 1px solid #212529;
+    }
+}
+@media screen and (min-width:992px){
+    /* H2圖片 */
+    .sectionTitle{
+        margin: 7em auto 1.5em;
+        font-size: 2em;
+        width: 8em;
+    }
+    .sectionTitle img{
+        width: 70%;
+        position: absolute;
+        top: -3.5em;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        z-index: -1;
+    }
+    /* 系列商品-伸縮版 */
+    .panel{
+        margin:10px;
+        height: 30em;
+        box-shadow: 0.2em 0.4em 0 #C3DAF4;
+    }
+}
