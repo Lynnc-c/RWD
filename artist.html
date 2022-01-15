@@ -80,8 +80,8 @@
                             <input type="checkbox"/>
                             <span></span>
                         </label>
-                        <a href="">
-                            <p>PP BABY</p>
+                        <a href="#two">
+                            <p>MOMOCO</p>
                         </a>
                     </div>
                     <div class="folderItem">
@@ -89,7 +89,7 @@
                             <input type="checkbox"/>
                             <span></span>
                         </label>
-                        <a href="#two">
+                        <a href="#three">
                             <p>狗狗夾星</p>
                         </a>
                     </div>
@@ -98,8 +98,8 @@
                             <input type="checkbox"/>
                             <span></span>
                         </label>
-                        <a href="">
-                            <p>POP MART</p>
+                        <a href="#four">
+                            <p>Molly</p>
                         </a>
                     </div>
                     <div class="folderItem">
@@ -107,8 +107,8 @@
                             <input type="checkbox"/>
                             <span></span>
                         </label>
-                        <a href="">
-                            <p>幸會潮玩</p>
+                        <a href="#five">
+                            <p>LABUBU</p>
                         </a>
                     </div>
                 </div>
@@ -119,11 +119,79 @@
 <!------- SKULLPANDA ------->
     <section class="artistWrap container">
         <div class="row">
-            <div class="artistTitle">
+            <div class="artistTitle" id="one">
                 <h3>SKULLPANDA</h3>
             </div>
-            <div class="artistBody col-12 pic skullPanda">
-                
+            <div class="artistBody col-12 pic">
+                <div class="scale skullPanda">
+                    <div class="comparison" style="--slide: 500">
+                        <input type="range" min="1" max="1000" value="500" class="slider" oninput="this.parentNode.style.setProperty('--slide', `${this.value}`)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------- MOMOCO ------->
+    <section class="artistWrap container">
+        <div class="row">
+            <div class="artistTitle" id="two">
+                <h3>MOMOCO</h3>
+            </div>
+            <div class="artistBody col-12 pic">
+                <div class="scale momoco">
+                    <div class="comparison" style="--slide: 500">
+                        <input type="range" min="1" max="1000" value="500" class="slider" oninput="this.parentNode.style.setProperty('--slide', `${this.value}`)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------- 狗狗夾星 ------->
+    <section class="artistWrap container">
+        <div class="row">
+            <div class="artistTitle" id="three">
+                <h3>狗狗夾星</h3>
+            </div>
+            <div class="artistBody col-12 pic">
+                <div class="scale ppBaby">
+                    <div class="comparison" style="--slide: 500">
+                        <input type="range" min="1" max="1000" value="500" class="slider" oninput="this.parentNode.style.setProperty('--slide', `${this.value}`)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------- Molly ------->
+    <section class="artistWrap container">
+        <div class="row">
+            <div class="artistTitle" id="four">
+                <h3>Molly</h3>
+            </div>
+            <div class="artistBody col-12 pic">
+                <div class="scale molly">
+                    <div class="comparison" style="--slide: 500">
+                        <input type="range" min="1" max="1000" value="500" class="slider" oninput="this.parentNode.style.setProperty('--slide', `${this.value}`)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------- LABUBU ------->
+    <section class="artistWrap container labubuWrap">
+        <div class="row">
+            <div class="artistTitle" id="five">
+                <h3>LABUBU</h3>
+            </div>
+            <div class="artistBody col-12 pic">
+                <div class="scale labubu">
+                    <div class="comparison" style="--slide: 500">
+                        <input type="range" min="1" max="1000" value="500" class="slider" oninput="this.parentNode.style.setProperty('--slide', `${this.value}`)">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -201,8 +269,8 @@
 
 <!----- 回頂部按鈕JS ----->
     <script src="js/all.js"></script>
-
 <!----- JS ----->
     <script src="js/artist.js"></script>
+
 </body>
 </html>
