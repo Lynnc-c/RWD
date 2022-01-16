@@ -1,0 +1,316 @@
+/* 色碼 */
+/* --myColorImp:#E56E7A;
+--myColorWhite:#fff;
+--myColorBlack:#212529;
+--myColorY:#F6BD60;
+--myColorM:#FFF3E1;
+--myColorP:#F5CAC3;
+--myColorB:#C3DAF4;
+--myColorG:#ccd5ae;
+--myColorPur:#CFAEE5; ------------------------------*/
+
+
+/* 所有圖片都寬100% */
+.pic img{
+    width: 100%;
+}
+
+/* -------------------- 段落標題 H2 -------------------- */
+.sectionTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2em;
+    width: 7em;
+    background-color: #fff;
+    border: 1px solid #212529;
+    box-shadow: 0.2em 0.2em 0 #C3DAF4;
+    margin: 5em auto 1.5em;
+    position: relative;
+}
+.sectionTitle img{
+    width: 80%;
+    position: absolute;
+    top: -3.5em;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    z-index: -1;
+}
+/* -------------------- 服務據點 -------------------- */
+.storeWrap .col-6{
+    height: fit-content;
+    margin: auto;
+}
+.storeWrap .row{
+    text-align: center;
+    justify-content: space-around;
+}
+.location{
+    width: 80%; 
+    padding-top: 2em;
+}
+.locationInformation{
+    color: #212529;
+    border: 1px solid #212529;
+    border-radius: 0 0 10px 10px;
+    background: #FFF3E1 url(../img/store/store01.jpg) no-repeat 100% 10%/ 140%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+}
+.locationInformationP{
+    color: #212529;
+    border: 1px solid #212529;
+    border-radius: 0 0 10px 10px;
+    background: #FFF3E1 url(../img/store/store05.jpg) no-repeat 100% 100%/ 130%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+}
+.locationInformationR{
+    color: #212529;
+    border: 1px solid #212529;
+    border-radius: 0 0 10px 10px;
+    background: #FFF3E1 url(../img/store/store02.jpg) no-repeat 100% 10%/ 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+}
+.locationItem{
+    position: relative;
+}
+.locationInformation,.locationTitle{
+    box-shadow: 0.3em 0.3em 0 #C3DAF470;
+}
+.locationTitle{
+    background-color: #fff;
+    font-size: 0.9em;
+    color: #21252950;
+    font-weight: 500;
+    border: 1px solid #212529;
+    border-radius: 10px 10px 0 0 ;
+    line-height: 2em;
+    text-align: center;
+    background-image: radial-gradient(0.6em circle at 1em 1em, #F6BD60 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #F6BD60 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #F6BD60 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+    width: 100%;
+}
+.locationTitleR{
+    background-color: #fff;
+    font-size: 0.9em;
+    color: #21252950;
+    font-weight: 500;
+    border: 1px solid #212529;
+    border-radius: 10px 10px 0 0 ;
+    line-height: 2em;
+    text-align: center;
+    background-image: radial-gradient(0.6em circle at 1em 1em, #E56E7A 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #E56E7A 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #E56E7A 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+    width: 100%;
+}
+.locationTitleP{
+    background-color: #fff;
+    font-size: 0.9em;
+    color: #21252950;
+    font-weight: 500;
+    border: 1px solid #212529;
+    border-radius: 10px 10px 0 0 ;
+    line-height: 2em;
+    text-align: center;
+    background-image: radial-gradient(0.6em circle at 1em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.2em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 2.2em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 3.4em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 3.4em 1em, #212529 50%, transparent 55%);
+    width: 100%;
+}
+.locationInformation h3,.locationInformationP h3,.locationInformationR h3{
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    padding: 0.5em;
+    left: 10%;
+    top: 62%;
+    background-color: #fff;
+}
+.locationInformation p,.locationInformationP p,.locationInformationR p{
+    font-weight: 700;
+    color: #E56E7A;
+    display: inline-block;
+    position: absolute;
+    padding: 0.5em 0.8em;
+    top: 80%;
+    background-color: #fff;
+    font-size: 0.8em;
+    left: 10%;
+}
+
+/* 地圖標點 */
+.mapImg{
+    position: relative;
+}
+.marker {
+	position: absolute;
+    top: 3%; 
+    left: 73%;
+    cursor: pointer;
+}
+.marker img{
+    width: 60%;
+    z-index: 1;
+    animation: none;
+}
+.marker img:hover{
+    animation: float 1.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+@keyframes float{
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    30% {
+        transform: translate(0, -3px);
+    }
+    70% {
+        transform: translate(0, 2px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.pulse {
+    top:70%;
+    left:25%;
+	width: 20px;
+	height: 10px;
+	border-radius: 50%;
+	background: #21252980;
+	position: absolute;
+    z-index: -1;
+}
+.dot {
+    position: absolute;
+    height: 10px;
+	width: 30px;
+	top:50%;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	border: 5px solid #F6BD60;
+	background: transparent;
+	border-radius: 50%;
+	-webkit-animation: flash 2s ease-out;
+	-moz-animation: flash 2s ease-out;
+	animation: flash 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+@-moz-keyframes pulse {
+	0% {-moz-transform: scale(0);opacity: 0.0;}
+	25% {-moz-transform: scale(0);opacity: 0.1;}
+	50% {-moz-transform: scale(0.1);opacity: 0.3;}
+	75% {-moz-transform: scale(0.5);opacity: 0.5;}
+	100% {-moz-transform: scale(1);opacity: 0.0;}
+}
+@-webkit-keyframes flash {
+	0% {-webkit-transform: scale(0);opacity: 0.0;}
+	25% {-webkit-transform: scale(0);opacity: 0.1;}
+	50% {-webkit-transform: scale(0.1);opacity: 0.3;}
+	75% {-webkit-transform: scale(0.5);opacity: 0.5;}
+	100% {-webkit-transform: scale(1);opacity: 0.0;}
+}
+.markerR{
+    top: 25%; 
+    left: 43%;
+}
+.markerR .dot {
+	border: 5px solid #E56E7A;
+}
+.markerP{
+    top: 66%; 
+    left: 30%;
+}
+.markerP .dot {
+	border: 5px solid #CFAEE5;
+}
+
+    
+/* md平板直up --------------------------------------------*/
+@media screen and (min-width:768px){
+    .sectionTitle{
+        font-size: 1.7em;
+        width: 7.5em;
+        border: 1px solid #212529;
+    }
+    /* 地圖標點 */
+    .marker {
+        position: absolute;
+        top: 5%; 
+        left: 80%;
+        cursor: pointer;
+    }
+    .marker img{
+        width: 80%;
+        z-index: 1;
+        animation: none;
+    }
+    .markerR{
+        top: 27%; 
+        left: 47%;
+    }
+    .markerP{
+        top: 70%; 
+        left: 33%;
+    }
+    .dot {
+        top:73%;
+    }
+    .pulse {
+        top:85%;
+    }
+    .location{
+        padding-top: 0;
+        width:30%; 
+    }
+}
+/* lg平板橫up --------------------------------------------*/
+@media screen and (min-width:992px){
+    /* H2圖片 */
+    .sectionTitle{
+        margin: 7em auto 1.5em;
+        font-size: 2em;
+        width: 8em;
+    }
+    .sectionTitle img{
+        width: 85%;
+        position: absolute;
+        top: -4.5em;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        z-index: -1;
+    }
+    /* 地圖標點 */
+    .marker {
+        position: absolute;
+        top: 5%; 
+        left: 80%;
+        cursor: pointer;
+    }
+    .marker img{
+        width: 80%;
+        z-index: 1;
+        animation: none;
+    }
+    .markerR{
+        top: 27%; 
+        left: 47%;
+    }
+    .markerP{
+        top: 70%; 
+        left: 33%;
+    }
+    .dot {
+        top:73%;
+    }
+    .pulse {
+        top:85%;
+    }
+}
