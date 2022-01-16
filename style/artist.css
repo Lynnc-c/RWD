@@ -47,6 +47,7 @@
     border-radius: 10px 10px 0 0 ;
     line-height: 2em;
     text-align: center;
+    background-color: #fff;
     background-image: radial-gradient(0.6em circle at 1em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 1em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 2.5em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 2.5em 1em, #212529 50%, transparent 55%),radial-gradient(0.6em circle at 4.1em 1em, #CFAEE5 50%, transparent 60%),radial-gradient(0.73em circle at 4.1em 1em, #212529 50%, transparent 55%);
 }
 .artistBody{

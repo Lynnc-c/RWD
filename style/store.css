@@ -31,12 +31,15 @@
 .sectionTitle img{
     width: 80%;
     position: absolute;
-    top: -3.5em;
+    top: -3.1em;
     left: 50%;
     transform: translate(-50%, -0%);
     z-index: -1;
 }
 /* -------------------- 服務據點 -------------------- */
+body{
+    background: url(../img/store/storeBG.png) no-repeat 0% 0%/100% 4%;
+}
 .storeWrap .col-6{
     height: fit-content;
     margin: auto;
@@ -231,10 +234,37 @@
 .markerP .dot {
 	border: 5px solid #CFAEE5;
 }
-
-    
+/* 販賣機步驟 */
+.stepBox{
+    margin-bottom: 5em;
+}
+.stepBox .blindBoxLg .col-md-3 + .col-md-3::before{
+    content: '';
+    display: block;
+    background: url(../img/store/blindBoxArrow.png) no-repeat center / 50%;
+    width: 15%;
+    height: 18%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    z-index: 1;
+}
+.stepBox .blindBoxSm .col-12+.col-12::before{
+    content: '';
+    display: block;
+    background: url(../img/store/blindBoxArrowV.png) no-repeat center / 100%;
+    width: 9%;
+    height: 9%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+}
 /* md平板直up --------------------------------------------*/
 @media screen and (min-width:768px){
+    body{
+        background: url(../img/store/storeBG.png) no-repeat 0% 0%/100% 10%;
+    }
     .sectionTitle{
         font-size: 1.7em;
         width: 7.5em;
@@ -282,10 +312,13 @@
     .sectionTitle img{
         width: 85%;
         position: absolute;
-        top: -4.5em;
+        top: -3.9em;
         left: 50%;
         transform: translate(-50%, -0%);
         z-index: -1;
+    }
+    body{
+        background: url(../img/store/storeBG.png) no-repeat 0% 0%/100% 15%;
     }
     /* 地圖標點 */
     .marker {
@@ -312,5 +345,9 @@
     }
     .pulse {
         top:85%;
+    }
+    /* 販賣機步驟 */
+    .stepBox{
+        margin-bottom: 9em;
     }
 }

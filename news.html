@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style/grid.css">
     <link rel="stylesheet" href="style/all.css">
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/store.css">
+    <link rel="stylesheet" href="style/news.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- JS -->
@@ -36,8 +36,8 @@
             <a href="products.html">系列商品</a>
             <a href="artist.html">藝術家</a>
             <a href="about.html">關於我們</a>
-            <a href="store.html" class="thispage">服務據點</a>
-            <a href="news.html">最新消息</a>
+            <a href="store.html">服務據點</a>
+            <a href="news.html" class="thispage">最新消息</a>
             <a href="#"><i class="fas fa-cart-arrow-down"></i></a>
             <a href="#"><i class="fas fa-user"></i></a>
             <a href="#"><i class="fas fa-search"></i></i></a>
@@ -49,122 +49,137 @@
                 <a href="products.html"><li>系列商品</li></a>
                 <a href="artist.html"><li>藝術家</li></a>
                 <a href="about.html"><li>關於我們</li></a>
-                <a href="news.html"><li>最新消息</li></a>
+                <a href="store.html"><li>服務據點</li></a>
             </ol>
         </div>
     </header>
 
-<!------- 服務據點 ------->
-    <section class="storeWrap" container">
+<!------- 系列商品 ------->
+    <section class="seriesWrap container ">
         <div class="sectionTitle">
-            <h2>服務據點</h2>
-            <img src="img/store/cat02.png" alt="cat" class="pic">
+            <h2>系列商品</h2>
+            <img src="img/news/cat01.png" alt="cat" class="pic">
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-6 mapWrap">
-                    <div class="mapImg pic">
-                        <img src="img/store/map.png" alt="Taiwan map" class="map">
-                        <div class="marker markerY" id="markerY">
-                            <div class="dot"></div>
-                            <div class="pulse"></div>
-                            <img src="img/store/marker03.png" alt="marker" id="taipei">
-                        </div>
-                        <div class="marker markerR" id="markerR">
-                            <div class="dot"></div>
-                            <div class="pulse"></div>
-                            <img src="img/store/marker01.png" alt="marker" id="taipei">
-                        </div>
-                        <div class="marker markerP" id="markerP">
-                            <div class="dot"></div>
-                            <div class="pulse"></div>
-                            <img src="img/store/marker02.png" alt="marker" id="taipei">
-                        </div>
+        <div class="row">
+            <div class="news">
+                <figure class="newsItem">
+                    <img src="img/news/01.jpg" alt="art toys">
+                    <div class="date">
+                        <span class="day" style="color: #E56E7A;">新</span>
+                        <span class="day">27</span><span class="month">Dec</span>
                     </div>
+                    <figcaption>
+                        <h3>theodora skulltoons the pino</h3>
+                        <p>來自奧地利設計師theodora...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/02.jpeg" alt="art toys" />
+                    <div class="date">
+                        <span class="day">12</span><span class="month">Dec</span>
+                    </div>
+                    <figcaption>
+                        <h3>SML WARS SS 001 SPACECR...</h3>
+                        <p>由韓國「Sticky Monster Lab SML...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/03.png" alt="art toys" />
+                    <div class="date">
+                        <span class="day">28</span><span class="month">Nov</span>
+                    </div>
+                    <figcaption>
+                        <h3>LTNC studio</h3>
+                        <p>作品本身的設計都是一張黑臉搭配...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/04.jpg" alt="art toys" />
+                    <div class="date">
+                        <span class="day">23</span><span class="month">Nov</span>
+                    </div>
+                    <figcaption>
+                        <h3>skulltoons the pino...</h3>
+                        <p>材質：乙烯基/ PVC / ABS...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/05.jpg" alt="art toys" />
+                    <div class="date">
+                        <span class="day">20</span><span class="month">Nov</span>
+                    </div>
+                    <figcaption>
+                        <h3>Exclusive interview...</h3>
+                        <p>兩年前，一個名叫“Skullpanda”的...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/06.jpg" alt="art toys" />
+                    <div class="date">
+                        <span class="day">17</span><span class="month">Nov</span>
+                    </div>
+                    <figcaption>
+                        <h3>SKULLPANDA人生如戲...</h3>
+                        <p>每個人物感覺就像是向經典電影...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/07.png" alt="art toys" />
+                    <div class="date">
+                        <span class="day">03</span><span class="month">Nov</span>
+                    </div>
+                    <figcaption>
+                        <h3>POPMART ART TOYS...</h3>
+                        <p>由韓國「Sticky Monster Lab SML...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/08.jpg" alt="art toys" />
+                    <div class="date">
+                        <span class="day">13</span><span class="month">Oct</span>
+                    </div>
+                    <figcaption>
+                        <h3> Lulu Pop-up Café ...</h3>
+                        <p>在星期六，由 Toyzeroplus 與 泰國...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <figure class="newsItem">
+                    <img src="img/news/09.jpg" alt="art toys" />
+                    <div class="date">
+                        <span class="day">07</span><span class="month">Oct</span>
+                    </div>
+                    <figcaption>
+                        <h3>Art Toys、Art Editions？</h3>
+                        <p>蘇富比拍賣六年前的「NIGO Only Live...</p>
+                    </figcaption>
+                    <div class="hover"><i class="fas fa-sign-out-alt"></i></div>
+                    <a href="#"></a>
+                </figure>
+                <div class="page">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <button style="font-weight: 600;color: #E56E7A;background-color: #ddd;">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button><i class="fas fa-chevron-right"></i></button>
                 </div>
-                <div class="location col-6 col-md-4 hvr-hang">
-                    <div class="locationTitle" id="locationTitle">
-                        <h3>販賣機</h3>
-                    </div>
-                    <div class="scale">
-                        <div class="locationInformation" id="locationInformation">
-                            <h3>新光三越A11 1F</h3>
-                            <p>台北市信義區松壽路11號</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!------- 盲盒玩法 ------->
-    <section class="blindBox container">
-        <div class="sectionTitle">
-            <h2>盲盒玩法</h2>
-            <img src="img/store/cat03.png" alt="cat" class="pic">
-        </div>
-        <div class="blindBoxSm row">
-            <div class="col-12 pic">
-                <img src="img/index/blindBoxPlayV01.png" alt="blind box play">
-            </div>
-            <div class="col-12 pic">
-                <img src="img/index/blindBoxPlayV02.png" alt="blind box play">
-            </div>
-            <div class="col-12 pic">
-                <img src="img/index/blindBoxPlayV03.png" alt="blind box play">
-            </div>
-            <div class="col-12 pic">
-                <img src="img/index/blindBoxPlayV04.png" alt="blind box play">
-            </div>
-        </div>
-        <div class="blindBoxLg row">
-            <div class="col-md-3 pic">
-                <img src="img/index/blindBoxPlay01.png" alt="blind box play">
-            </div>
-            <div class="col-md-3 pic">
-                <img src="img/index/blindBoxPlay02.png" alt="blind box play">
-            </div>
-            <div class="col-md-3 pic">
-                <img src="img/index/blindBoxPlay03.png" alt="blind box play">
-            </div>
-            <div class="col-md-3 pic">
-                <img src="img/index/blindBoxPlay04.png" alt="blind box play">
-            </div>
-        </div>
-    </section>
-
-<!------- 販賣機操作 ------->
-    <section class="blindBox container stepBox">
-        <div class="sectionTitle">
-            <h2>販賣機操作</h2>
-            <img src="img/store/cat01.png" alt="cat" class="pic">
-        </div>
-        <div class="blindBoxSm row">
-            <div class="col-12 pic">
-                <img src="img/store/blindBoxPlayV01.png" alt="blind box play">
-            </div>
-            <div class="col-12 pic">
-                <img src="img/store/blindBoxPlayV02.png" alt="blind box play">
-            </div>
-            <div class="col-12 pic">
-                <img src="img/store/blindBoxPlayV03.png" alt="blind box play">
-            </div>
-            <div class="col-12 pic">
-                <img src="img/store/blindBoxPlayV04.png" alt="blind box play">
-            </div>
-        </div>
-        <div class="blindBoxLg row">
-            <div class="col-md-3 pic">
-                <img src="img/store/blindBoxPlay01.png" alt="blind box play">
-            </div>
-            <div class="col-md-3 pic">
-                <img src="img/store/blindBoxPlay02.png" alt="blind box play">
-            </div>
-            <div class="col-md-3 pic">
-                <img src="img/store/blindBoxPlay03.png" alt="blind box play">
-            </div>
-            <div class="col-md-3 pic">
-                <img src="img/store/blindBoxPlay04.png" alt="blind box play">
             </div>
         </div>
     </section>
@@ -206,8 +221,8 @@
                         <li><a href="products.html">系列商品</a></li>
                         <li><a href="artist.html">藝術家</a></li>
                         <li><a href="about.html">關於我們</a></li>
-                        <li><a href="store.html" class="thispage">服務據點</a></li>
-                        <li><a href="news.html">最新消息</a></li>
+                        <li><a href="store.html">服務據點</a></li>
+                        <li><a href="news.html" class="thispage">最新消息</a></li>
                     </ul>
                 </div>
                 <div class="col-4 col-lg-3">
@@ -243,9 +258,6 @@
 <!----- 回頂部按鈕JS ----->
     <script src="js/all.js"></script>
 
-<!----- JS ----->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/store.js"></script>
 
 </body>
 </html>

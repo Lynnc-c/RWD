@@ -37,6 +37,9 @@
     z-index: -1;
 }
 /* 系列切換--------------------------------------- */
+body{
+    background: url(../img/products/all/BG02.png) no-repeat 0% 0%/100% 15%;
+}
 .panel{
     background-size: cover;
     background-position: center;
